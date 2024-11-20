@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
         <img
           src="/travelImage.jpeg"
-          className="h-[500px] w-[800px] rounded-md shadow-lg"
+          className="h-[500px] w-[800px] shadow-lg md:rounded-lg"
         />
         <Link to="/create-trip">
           <Button className="bg-black mb-10">
