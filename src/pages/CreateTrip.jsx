@@ -23,6 +23,7 @@ import axios from "axios";
 import { db } from "@/service/firebaseConfig";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import Footer from "@/view-trip/components/Footer";
 
 const CreateTrip = () => {
   const [place, setPlace] = useState("");
@@ -127,11 +128,12 @@ const CreateTrip = () => {
       <div className="mt-20 flex flex-col gap-9">
         <div>
           <h2 className="font-medium text-xl my-3">
-            What is your destination of choice?
+            Search and select your destination of choice.
           </h2>
           <GooglePlacesAutocomplete
             apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY}
             selectProps={{
+              placeholder:
               place,
               onChange: (v) => {
                 setPlace(v);
@@ -144,6 +146,7 @@ const CreateTrip = () => {
         <div>
           <h2 className="text-xl my-3 font-medium">
             How many days are you planning the trip for?
+            
           </h2>
           <Input
             placeholder={"Ex. 4"}
@@ -223,6 +226,7 @@ const CreateTrip = () => {
           </DialogContent>
         </Dialog>
       </div>
+      <Footer />
     </div>
   );
 };

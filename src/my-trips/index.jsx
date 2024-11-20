@@ -3,6 +3,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UserTripCardItem from "./components/UserTripCardItem";
+import Footer from "@/view-trip/components/Footer";
 
 export default function Mytrips() {
   const [userTrips, setUserTrips] = useState([]);
@@ -44,6 +45,7 @@ export default function Mytrips() {
               ></div>
             ))}
       </div>
+      <Footer />
     </div>
   );
 }

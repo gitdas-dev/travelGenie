@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import Footer from "@/view-trip/components/Footer";
 
 const Hero = () => {
   return (
@@ -32,6 +33,7 @@ const Hero = () => {
           </Button>
         </Link>
       </div>
+      <Footer />
     </>
   );
 };
