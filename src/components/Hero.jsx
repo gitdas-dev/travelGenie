@@ -8,9 +8,10 @@ const Hero = () => {
     <>
       <div className="flex flex-col items-center  gap-9">
         <h1 className="font-extrabold text-[50px] text-center mt-16 lg:w-[600px]">
-          <span className="text-[#AA5486]">
-            Adventure Awaits! Smart Itineraries:
-          </span>{" "}
+          <div className="text-[#AA5486]">
+            Adventure Awaits! 
+          </div>{" "}
+          <div>Smart Itineraries:</div>
           Tailored Just for You with AI
         </h1>
         <p className="text-center lg:text-xl text-sm text-gray-500 bg-pink-100 rounded-xl px-6 p-2 shadow-lg mx-3">
