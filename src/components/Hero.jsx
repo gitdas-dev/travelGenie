@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <div className="flex flex-col items-center  gap-9">
         <h1 className="font-extrabold text-[50px] text-center mt-16 lg:w-[600px]">
-          <span className="text-[#f56491]">
+          <span className="text-[#AA5486]">
             Adventure Awaits! Smart Itineraries:
           </span>{" "}
           Tailored Just for You with AI
@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
         </p>
         <img
-          src="/travelImage.jpg"
+          src="/travelImage.jpeg"
           className="h-[500px] w-[800px] rounded-md shadow-lg"
         />
         <Link to="/create-trip">
