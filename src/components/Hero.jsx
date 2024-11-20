@@ -17,7 +17,7 @@ const Hero = () => {
           Explore effortlessly with our AI-powered travel itinerary website!
           Tailored to your preferences and schedule, our platform creates
           dynamic, personalized travel plans.
-          <p className="text-xs">
+          <p className="text-xs mt-2">
             Say goodbye to hours of research—let our smart itinerary planner
             design your perfect trip in minutes!
           </p>
